@@ -130,6 +130,7 @@ Configuration: Storing application settings like database URLs, usernames, passw
     spring.datasource.username=Database Username
     spring.datasource.password=Database Pass
     spring.datasource.driver-class-name=org.postgresql.Driver
+    
     spring.security.user.name=spring security username
     spring.security.user.password=spring security pass
 
@@ -242,3 +243,7 @@ Example:
 
     
 # Spring Security
+
+1) Cross-site request forgery (CSRF) is a web security attack that tricks a user's browser into performing unwanted actions on a website.
+
+Spring Security enables CSRF protection by default. This means that for any state-changing requests (POST, PUT, DELETE), Spring Security will require a valid CSRF token to be included in the request.
