@@ -140,10 +140,6 @@ Configuration: Storing application settings like database URLs, usernames, passw
     # Comment: showing sql syntax
     spring.jpa.show-sql=true
     
-# Spring JDBC
-
-
-
 # Spring data JPA
 
     public interface ReviewRepository extends JpaRepository<Review, Long> {
@@ -167,6 +163,22 @@ Configuration: Storing application settings like database URLs, usernames, passw
     E.X.: List<Review> review = reviewRepository.findAll();
 
     **FOR UPDATE, DELETE SEARCH IT UP**
+    
+**Spring Data JPA annotations**
+
+1) @ManyToOne or @OneToMany
+
+- @OneToMany is One entity is related to many entities
+
+- @ManyToOne is many entity is related to one entities
+
+- For example: One quiz can have multiple questions so in question entity should have @ManyToOne on quiz variable
+
+2) @ManyToMany (Many-to-Many Relationship)
+
+- Both entities can have multiple related entities.
+
+- A junction table (third table) is created automatically to store relationships.
 
 **Custom Query Methods**
 
