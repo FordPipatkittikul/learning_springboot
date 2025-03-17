@@ -16,6 +16,10 @@ assembled, and managed by Spring's IoC container. The Spring IoC container is re
 - Managing dependencies between beans (Dependency Injection).
 - Managing the lifecycle of beans (initialization and destruction).
 
+**Lifecycle of beans**
+    - By default, Spring beans have singleton scope, meaning the same instance is shared across the application
+    - **Protoype scope**: A new instance is created every time the bean is requested
+
 # Ways to make object spring managed
 
 1) XML-based configuration
